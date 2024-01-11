@@ -47,10 +47,23 @@
             margin: 5px 0;
             color: #555;
         }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #3498db;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
     </style>
 </head>
 <body>
-    <h1>Uploaded Images</h1> 
+    <h1>Uploaded Images</h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Button><a href="/imagePage">Upload Posts</a></Button>
     <div class="image-container">
         <% items.forEach(function(image) { %>
             <div class="image-card">
